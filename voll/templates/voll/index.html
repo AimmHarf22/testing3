@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VolleyBall</title>
+    <link rel="stylesheet" href="{% static 'voll/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body id="home">
+    
+    <h1 id="beg">Lets Get Started!!</h1>
+    <h1 id="greeting">Welcome, {{greeting}}</h1>
+    <a href="{% url 'logout' %}">
+        <button id="logout" type="button" class="btn btn-danger">Log Out</button>
+    </a>
+    <script src="{% static 'voll/index.js' %}"></script>
+
+    <button id="b1" type="button" class="btn btn-info">Click Here</button>
+    <button id="b2" type="button" class="btn btn-info">Definiton Of VolleyBall</button>
+    <button id="b3" type="button" class="btn btn-info">Learn More</button>
+    <button id="b4" type="button" class="btn btn-info">Definition of a sport</button>
+    <button id="b4" type="button" class="btn btn-info">Click Here</button>
+    <button id="b5" type="button" class="btn btn-info">Conclusion</button>
+    <form action="{% url 'feedback' %}">
+        <button id="b6" type="submit" class="btn btn-info">Final</button>
+    </form>
+    
+
+    <p id="arrow">➡️</p>
+
+    
+
+</body>
+</html>

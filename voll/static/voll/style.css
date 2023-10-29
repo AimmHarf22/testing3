@@ -1,0 +1,323 @@
+#register {
+    background-image: url("https://salinasvalleytribune.com/wp-content/uploads/sites/29/2022/10/Volleyball-metro.jpg");
+}
+#login {
+    background-image: url("https://s.hdnux.com/photos/01/34/03/02/24129685/4/rawImage.jpg");
+}
+#home {
+    background-image: url("https://goccusports.com/images/2023/6/22/volleyball_on_court.png");
+}
+#feedback {
+    background-image: url("https://img.freepik.com/free-photo/glowing-lines-human-heart-3d-shape-dark-background-generative-ai_191095-1435.jpg");
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+@keyframes register {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 100%;
+    }
+    75% {
+        left: -1000px;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+
+#reg {
+    animation-name: register;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    font-size: 400px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 100px;
+    text-align: center;
+}
+h6 {
+    font-family: cursive;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+p {
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+}
+
+@keyframes greeting {
+    from {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(249, 255, 192);
+    }
+    to {
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(255, 0, 255);
+    }
+    
+}
+#greeting {
+    animation-name: greeting;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    font-size: 120px;
+    font-family: cursive;
+}
+#beg {
+    font-size: 100px;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    color: rgb(43, 205, 226);
+    
+}
+
+
+@keyframes shift {
+    0% {
+        left: -100000px;
+    }
+    25% {
+        left: -500px;
+    }
+    50% {
+        left: -100px;
+    }
+    100% {
+        right: 100000;
+    }
+
+}
+#b1info, #b3info {
+    animation-name: shift;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 50px;
+    left: 50px;
+   
+    color: orange;
+    font-size: 50px;
+    font-family: cursive;
+    text-align: center;
+
+}
+
+#b1, #b2, #b3, #b4, #b5, #b6 {
+    display: none;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+#logout {
+    position: absolute;
+    right: 100px;
+}
+
+@keyframes read {
+    0% {
+        top: 1000px;
+       
+    }
+    50% {
+        top: 400px;
+    }
+    100% {
+        top: 350px;
+        
+    }
+}
+
+#b2info {
+    position: absolute;
+    animation-name: read;
+    animation-duration: 30s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: bold;
+    color: yellow
+   
+}
+
+
+#loginMessage {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+#b3info {
+    color: deeppink;
+}
+
+@keyframes grow {
+    0% {
+        font-size: 0px;
+       
+    }
+
+    50% {
+        font-size: 25px;
+      
+    }
+    100% {
+        font-size: 50px;
+   
+    }
+    
+}
+@keyframes side {
+    0% {
+        right: 30px;
+    }
+    50% {
+        right: 70px;
+    }
+    100% {
+        right: 30px;
+    }
+}
+
+@keyframes colorChange {
+    from {
+        color: rgb(0, 255, 255);
+    }
+
+    to {
+        color: yellow
+    }
+}
+
+#b4info {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    right: 50px;
+    left: 50px;
+    animation-name: grow;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    font-family: monospace;
+    color: lightcoral;
+}
+
+#b5info {
+    position: absolute;
+   
+    bottom: 600px;
+    left: 50px;
+    right: 50px;
+    font-size: 45px;
+    font-family: Jazz Let, fantasy;
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+
+
+#arrow {
+    position: absolute;
+    top: 500px;
+    bottom: 100px;
+    right: 50px;
+    font-size: 50px;
+    animation-name: side;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes shifts {
+    0% {
+        left: -20px;
+    }
+    50% {
+        left: 600px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+#feedMessage {
+    border: solid black ;
+    background-color: antiquewhite;
+    position: absolute;
+    animation-name: shifts;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    color: rgb(255, 110, 110);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#ftext {
+    position: absolute;
+    bottom: 250px;
+    left: 700px;
+    padding: 35px;
+    width: 500px;
+    height: 200px;
+    background-color: beige;
+    font-size: 20px;
+    font-family: cursive;
+    
+}
+
+#fsubmit {
+    position: absolute;
+    bottom: 210px;
+    left: 1150px;;
+
+
+}
+
+#fmessage {
+    position: absolute;
+    color: rgb(36, 166, 36);
+    font-size: 30px;
+    top: 400px;
+    left: 80px;
+    
+}
